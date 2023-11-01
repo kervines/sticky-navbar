@@ -15,6 +15,7 @@ body {
   position: fixed;
   background-color: white;
   z-index: 10;
+  transition: 0.3s;
 }
 
 header {
@@ -28,6 +29,12 @@ ul {
   display: flex;
   list-style: none;
   gap: 20px;
+}
+
+/* classe responsavel pela animação do header */
+.change-color-header {
+  background-color: black;
+  color: white;
 }
 
 /* Section Welcome */
