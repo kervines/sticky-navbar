@@ -5,7 +5,7 @@ const propertyHeader = window.getComputedStyle(header);
 const heightHeader = Math.floor(+propertyHeader.height.replace('px', ''));
 
 window.addEventListener('scroll', () => {
-  if (Math.ceil(window.scrollY) + heightHeader > image.height) {
+  if (Math.floor(window.scrollY) + heightHeader > image.height) {
     header.style.backgroundColor = 'black';
     header.style.color = 'white';
     header.style.transition = '0.3s';
