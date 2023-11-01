@@ -6,10 +6,12 @@
 
 body {
   width: 100%;
+  height: 3000px;
 }
 
 .header-container {
   width: 100%;
+  height: auto;
   position: fixed;
   background-color: white;
   z-index: 10;
@@ -32,7 +34,6 @@ ul {
 
 .welcome-main {
   position: relative;
-  top: 20px;
 }
 
 .welcome-main h1 {
@@ -42,7 +43,8 @@ ul {
   transform: translate(-50%, -50%);
 
   color: #fff;
-  font-size: 48px;
+  text-shadow: 1px 5px 2px #333;
+  font-size: 36px;
 }
 
 img {
