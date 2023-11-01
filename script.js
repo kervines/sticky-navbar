@@ -6,11 +6,8 @@ const heightHeader = Math.floor(+propertyHeader.height.replace('px', ''));
 
 window.addEventListener('scroll', () => {
   if (Math.floor(window.scrollY) + heightHeader > image.height) {
-    header.style.backgroundColor = 'black';
-    header.style.color = 'white';
-    header.style.transition = '0.3s';
+    header.classList.add('change-color-header');
   } else {
-    header.style.backgroundColor = 'white';
-    header.style.color = 'black';
+    header.classList.remove('change-color-header');
   }
 });
